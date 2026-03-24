@@ -1,0 +1,59 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  background-color: #333;
+}
+
+h1, h2, h3 {
+  color: #DE6C3D;
+  text-align: center;
+}
+
+.header {
+  background-color: #444;
+  padding: 20px;
+  text-align: center;
+}
+
+.button {
+  background-color: #DE6C3D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #BF531F;
+}
+
+.card {
+  background-color: #555;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .button {
+    width: 100%;
+  }
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
