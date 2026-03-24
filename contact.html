@@ -3,56 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Battersea Roofing</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional link to CSS -->
+    <title>Contact Battersea Roofing - Free Quote</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Battersea Roofing</h1>
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="logo">Battersea Roofing</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#contact-form" class="cta-button-header">Get Quote</a>
+        </nav>
     </header>
 
-    <section>
-        <h2>Get in Touch</h2>
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero fade-in">
+            <div class="container">
+                <h1>Get in Touch With Battersea Roofing</h1>
+                <p class="hero-subtitle">We're here to help with your roofing needs. Reach out for a free, no-obligation quote.</p>
+            </div>
+        </section>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+        <!-- Contact Information Section -->
+        <section class="contact-info-section fade-in">
+            <div class="container">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h3>📞 Call Us</h3>
+                        <p>Speak directly with our team for immediate assistance.</p>
+                        <a href="tel:+442071234567" class="phone-link">020 7123 4567</a>
+                        <p class="available-text">Available Monday-Friday, 8am-6pm</p>
+                    </div>
 
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+                    <div class="contact-method">
+                        <h3>✉️ Email Us</h3>
+                        <p>Send us an email and we'll respond within 24 hours.</p>
+                        <a href="mailto:info@batterseaRoofing.com">info@batterseaRoofing.com</a>
+                    </div>
 
-    <section>
-        <h2>Call Us</h2>
-        <p>For immediate assistance, call us at: <strong>(123) 456-7890</strong></p>
-    </section>
+                    <div class="contact-method">
+                        <h3>📍 Location</h3>
+                        <p>Battersea, London</p>
+                        <p class="service-area">We serve all of Greater London and surrounding areas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Service Areas</h2>
-        <p>We are proud to serve the following areas:</p>
-        <ul>
-            <li>Battersea</li>
-            <li>Clapham</li>
-            <li>Wandsworth</li>
-            <li>Putney</li>
-        </ul>
-    </section>
+        <!-- Contact Form Section -->
+        <section class="contact-form-section fade-in" id="contact-form">
+            <div class="container">
+                <h2>Request Your Free Quote</h2>
+                <p class="form-intro">Fill out the form below and we'll contact you within 24 hours with a personalized quote.</p>
 
-    <section>
-        <h2>Find Us</h2>
-        <div id="map-placeholder">
-            <!-- Placeholder for map -->
-            <p>[Map Placeholder]</p>
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="020 XXXX XXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Type *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="Roof Repair">Roof Repair</option>
+                            <option value="New Roof Installation">New Roof Installation</option>
+                            <option value="Flat Roofing">Flat Roofing</option>
+                            <option value="Maintenance & Inspection">Maintenance & Inspection</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="property-type">Property Type *</label>
+                        <select id="property-type" name="property-type" required>
+                            <option value="">Select property type</option>
+                            <option value="Residential">Residential</option>
+                            <option value="Commercial">Commercial</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell Us About Your Project *</label>
+                        <textarea id="message" name="message" required placeholder="Describe your roofing needs..." rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button cta-button-large">Send Quote Request</button>
+                    <p class="form-note">We'll be in touch within 24 hours.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Service Areas Section -->
+        <section class="service-areas-section fade-in">
+            <div class="container">
+                <h2>Service Areas</h2>
+                <p class="areas-intro">We proudly serve the following areas in and around London:</p>
+
+                <div class="service-areas-grid">
+                    <div class="area">Battersea</div>
+                    <div class="area">Clapham</div>
+                    <div class="area">Wandsworth</div>
+                    <div class="area">Putney</div>
+                    <div class="area">Balham</div>
+                    <div class="area">Tooting</div>
+                    <div class="area">Streatham</div>
+                    <div class="area">Brixton</div>
+                    <div class="area">Peckham</div>
+                    <div class="area">Elephant & Castle</div>
+                    <div class="area">Vauxhall</div>
+                    <div class="area">South London</div>
+                    <div class="area">Central London</div>
+                    <div class="area">West London</div>
+                </div>
+
+                <p class="contact-for-service">Not sure if we serve your area? <a href="tel:+442071234567">Call us</a> to check.</p>
+            </div>
+        </section>
+
+        <!-- Map Placeholder Section -->
+        <section class="map-section fade-in">
+            <div class="container">
+                <h2>Find Us</h2>
+                <div class="map-placeholder">
+                    <p>📍 Battersea, London, England</p>
+                    <p class="map-note">[Interactive map coming soon - showing service coverage areas]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section fade-in">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>How much does a free quote cost?</h3>
+                    <p>It's completely free! There's no obligation, and we provide a detailed estimate with no hidden costs.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How quickly can you schedule work?</h3>
+                    <p>We typically schedule work within 1-2 weeks of your quote. Emergency repairs may be available sooner.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Are you insured?</h3>
+                    <p>Yes! We are fully insured and certified, providing complete protection for you and your property.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What warranty do you offer?</h3>
+                    <p>All our work comes with a comprehensive warranty. Details are provided in your quote and completion documentation.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you work weekends or evenings?</h3>
+                    <p>Standard hours are Monday-Friday, 8am-6pm. Emergency services available upon request.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Banner -->
+        <section class="cta-banner fade-in">
+            <div class="container">
+                <h2>Let's Get Your Roof in Perfect Condition</h2>
+                <p>Contact us today for your free quote. No obligation, no hidden costs.</p>
+                <div class="cta-buttons">
+                    <a href="#contact-form" class="cta-button cta-button-large">Request Quote</a>
+                    <a href="tel:+442071234567" class="cta-button cta-button-large cta-button-secondary">Call Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Battersea Roofing</h4>
+                    <p>London's trusted roofing experts</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Phone: <a href="tel:+442071234567">020 7123 4567</a></p>
+                    <p>Email: <a href="mailto:info@batterseaRoofing.com">info@batterseaRoofing.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Battersea Roofing. All rights reserved. | Fully Insured & Experienced</p>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Battersea Roofing. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
